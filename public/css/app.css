@@ -11845,5 +11845,42 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+.about {
+  background: #fffaf3;
+}
+.about p {
+  color: #9e9e9e;
+}
+.about .check p {
+  color: #000;
+  font-weight: 400;
+}
+
+.cards {
+  display: flex;
+  gap: 50px;
+}
+.cards .carrd {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 30px;
+  padding-top: 40px;
+  transition: 0.5s;
+}
+.cards .carrd h2, .cards .carrd .h2 {
+  color: #ffb03b;
+}
+.cards .carrd:hover {
+  background-color: #ffb03b;
+  color: #fff;
+}
+.cards .carrd:hover h2, .cards .carrd:hover .h2 {
+  color: #fff;
+}
+.cards .carrd:hover p {
+  color: #fff;
+}
+.cards .carrd p {
+  color: #9e9e9e;
+}
 
 /*# sourceMappingURL=app.css.map */
