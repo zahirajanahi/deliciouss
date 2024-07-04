@@ -11982,4 +11982,20 @@ body {
   color: #ffb03b;
 }
 
+.check-content {
+  display: flex;
+}
+
+.left-side {
+  width: 100%;
+}
+
+.specials-img {
+  padding-left: 30px;
+}
+
+.desc {
+  width: 100%;
+}
+
 /*# sourceMappingURL=app.css.map */

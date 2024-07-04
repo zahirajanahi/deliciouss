@@ -142,7 +142,7 @@
     </div>
   </section>
   
-  <!--Menu section-->
+  <!--Menu section filter -->
   <section class="menu-section text-center container">
     <h1 class="pt-5 pb-3 ">Check our tasty <span class="text-warning">Menu</span></h1>
     <div class="nav buttons justify-content-center d-flex gap-3" id="myTab" role="tablist">
@@ -204,12 +204,13 @@
         </div>
     </div>
 </section>
+<!--check our special section-->
 <section class="container pt-5">
-  <h1 class="text-center">Check our <span class="special-title">Specials</span></h1>
-  <p class="text-center">Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.</p>
+  <h1 class="text-center">Check our <span class="special-title text-warning">Specials</span></h1>
+  <p class="text-center py-3">Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.</p>
   
   <div class="row">
-      <div class="col-lg-4">
+      <div class="col-lg-4 pt-4">
           <div class="nav flex-column gap-3 nav-pills"  role="tablist" aria-orientation="vertical">
               <a class="check-link text-warning" id="tab1" data-toggle="pill" href="#slide1" role="tab" aria-controls="slide1" aria-selected="true">Modi sit est</a>
               <a class="check-link id="tab2" data-toggle="pill" href="#slide2" role="tab" aria-controls="slide2" aria-selected="false">Unde praesentium sed</a>
@@ -218,33 +219,44 @@
               <a class="check-link id="tab5" data-toggle="pill" href="#slide5" role="tab" aria-controls="slide5" aria-selected="false">Iusto ut expedita aut</a>
           </div>
       </div>
-      <div class="col-lg-8 ps-5">
+
+      <div class="col-lg-8 ps-5 pt-3">
+
           <div class="tab-content" >
-              <div class="tab-pane fade show active" id="slide1" role="tabpanel" aria-labelledby="tab1">
+              <div class="tab-pane  fade show active" id="slide1" role="tabpanel" aria-labelledby="tab1">
+                <div class="food-desc d-flex">
+                <div class="desc">
                   <h3>Architecto ut aperiam autem id</h3>
                   <p class="special-content">Qui laudantium consequatur laborum sit qui ad sapiente dila parde sonata raperda videna mareta paulona marka.</p>
                   <p class="special-content">Et nobis maiores eius. Voluptatibus et enim blanditiis atque harum sint. Laborum eos ipsum ipsa odit magni. Incidunt hic ut molestiae aut qui. Est repellat minima eveniet eius et quis magni nihil. Consequatur dolorem quaerat quos qui similique accusamus nostrum rem vero.</p>
-                  <img src="./public/image/specials-1.jpg" height="300px" alt="Special Image 1">
+                  </div>
+                  <div class="specials-img">
+                  <img src="./public/image/specials-1.jpg"  height="230px" alt="Special Image 1">
+                  </div>
+                </div>
               </div>
-              <div class="tab-pane fade" id="slide2" role="tabpanel" aria-labelledby="tab2">
-                  <h3>Impedit facilis occaecati odio neque aperiam sit</h3>
-                  <p class="special-content">Eos voluptatibus quo. Odio similique illum id quidem non enim fuga. Qui natus non sunt dicta dolor et. In asperiores velit quaerat perferendis aut.</p>
-                  <p class="special-content">Iure officiis odit rerum. Harum sequi eum illum corrupti culpa veritatis quisquam. Neque necessitatibus illo rerum eum ut. Commodi ipsam minima molestiae sed laboriosam a iste odio. Earum odit nesciunt fugiat sit ullam. Soluta et harum voluptatem optio quae.</p>
-                  <img src="./public/image/specials-2.jpg" alt="Special Image 2">
+
+              <div class="tab-pane d-flex fade" id="slide2" role="tabpanel" aria-labelledby="tab2">
+                <div class="food-desc d-flex">
+                  <div class="desc">
+                    <h3>Architecto ut aperiam autem id</h3>
+                    <p class="special-content">Qui laudantium consequatur laborum sit qui ad sapiente dila parde sonata raperda videna mareta paulona marka.</p>
+                    <p class="special-content">Et nobis maiores eius. Voluptatibus et enim blanditiis atque harum sint. Laborum eos ipsum ipsa odit magni. Incidunt hic ut molestiae aut qui. Est repellat minima eveniet eius et quis magni nihil. Consequatur dolorem quaerat quos qui similique accusamus nostrum rem vero.</p>
+                    </div>
+                    <div class="specials-img">
+                    <img src="./public/image/specials-2.jpg"  height="230px" alt="Special Image 1">
+                    </div>
+                  </div>
               </div>
-              
-              <div class="tab-pane fade" id="slide3" role="tabpanel" aria-labelledby="tab3">
-            
-              </div>
-              <div class="tab-pane fade" id="slide4" role="tabpanel" aria-labelledby="tab4">
-                
-              </div>
-              <div class="tab-pane fade" id="slide5" role="tabpanel" aria-labelledby="tab5">
-                 
-              </div>
+             
+
           </div>
+
       </div>
+
   </div>
+
+
 </section>
 
  <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
