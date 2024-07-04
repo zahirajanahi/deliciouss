@@ -12086,4 +12086,27 @@ body {
   transform: scale(1.1);
 }
 
+.thirdcarousel {
+  background-image: url(../image/testimonials-bg.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  height: 70vh;
+}
+.thirdcarousel::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #000;
+  opacity: 0.4;
+}
+
+.test-img {
+  border: 5px solid grey;
+  border-radius: 50%;
+}
+
 /*# sourceMappingURL=app.css.map */
