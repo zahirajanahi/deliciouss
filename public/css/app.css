@@ -12034,6 +12034,24 @@ body {
   width: 3vw;
 }
 
+.up-img div,
+.down-img div {
+  overflow: hidden;
+}
+.up-img img,
+.down-img img {
+  transition: all 0.3s ease;
+}
+.up-img img:hover,
+.down-img img:hover {
+  transform: scale(1.1);
+}
+
+.textCenter {
+  text-align: center;
+  padding-top: 50px;
+}
+
 .form-container {
   max-width: 900px;
   margin: 50px auto;
@@ -12073,19 +12091,6 @@ body {
   gap: 25px;
 }
 
-.up-img div,
-.down-img div {
-  overflow: hidden;
-}
-.up-img img,
-.down-img img {
-  transition: all 0.3s ease;
-}
-.up-img img:hover,
-.down-img img:hover {
-  transform: scale(1.1);
-}
-
 .thirdcarousel {
   background-image: url(../image/testimonials-bg.jpg);
   background-size: cover;
@@ -12107,6 +12112,154 @@ body {
 .test-img {
   border: 5px solid grey;
   border-radius: 50%;
+}
+
+.formsTwo {
+  padding-bottom: 50px;
+}
+
+.box {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  width: 90vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+}
+
+.top {
+  display: flex;
+  padding: 4vh 3vw;
+}
+
+.iconS {
+  padding-right: 10px;
+  padding-top: 15px;
+}
+
+.contact {
+  display: flex;
+}
+.contact i {
+  padding: 10px 13px;
+  border-radius: 50%;
+  color: orange;
+  font-size: 19px;
+  background-color: rgba(255, 176, 59, 0.1);
+  transition: 0.4s;
+  cursor: pointer;
+}
+.contact i:hover {
+  color: #fff;
+  background-color: orange;
+}
+
+.p1 {
+  font-weight: bold;
+  font-size: 17px;
+  margin: 0;
+}
+
+.p2 {
+  color: #7a7368;
+  font-size: 14px;
+  width: 70%;
+}
+
+.secondform {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+  width: 100%;
+  padding: 4vh 3vw;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.secondform div {
+  display: flex;
+  gap: 1vw;
+  padding-bottom: 3vh;
+}
+.secondform div input {
+  width: 400vw;
+  height: 7vh;
+  padding-left: 1vw;
+  border: 1px solid #e1dcdc;
+}
+.secondform div input::placeholder {
+  font-size: 13px;
+}
+.secondform textarea {
+  height: 20vh;
+  padding-left: 1vw;
+  padding-top: 1vh;
+  border: 1px solid #e1dcdc;
+}
+.secondform textarea::placeholder {
+  font-size: 13px;
+}
+
+.button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  background-color: #ffaa00;
+  color: #fff;
+}
+
+.submit-btn {
+  padding-top: 20px;
+}
+
+.Map {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.google-map {
+  padding-bottom: 35%;
+  position: relative;
+}
+
+.google-map iframe {
+  height: 60vh;
+  width: 100%;
+  left: 0;
+  top: 0;
+  position: absolute;
+}
+
+.footer {
+  position: relative;
+  background-color: #35322d;
+}
+
+.footer .social-icons a {
+  font-size: 1.5rem;
+  transition: color 0.3s;
+  background-color: #5b564d;
+  padding: 10px 13px;
+  border-radius: 20px;
+  font-size: 17px;
+}
+
+.back-to-top {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  transition: background-color 0.3s;
 }
 
 /*# sourceMappingURL=app.css.map */
