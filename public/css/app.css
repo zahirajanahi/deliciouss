@@ -11846,8 +11846,17 @@ textarea.form-control-lg {
   }
 }
 @font-face {
-  src: url(../fonts/OLeoScript-Regular.ttf);
+  font-family: oleo;
+  src: url(../fonts/Satisfy-Regular.ttf);
 }
+h1, .h1 {
+  font-family: oleo;
+}
+
+h2, .h2 {
+  font-family: oleo;
+}
+
 .book {
   padding: 5px 20px;
   border-radius: 20px;
@@ -11878,10 +11887,10 @@ body {
   min-height: 300px;
 }
 .carousel-item h1, .carousel-item .h1 {
-  font-family: "";
+  font-family: oleo;
 }
 
-.carousel-item::before {
+.bg-opcty::before {
   content: "";
   display: block;
   position: absolute;
@@ -11923,7 +11932,7 @@ body {
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   padding: 30px;
   padding-top: 40px;
-  transition: 0.5s;
+  transition: 0.3s;
 }
 .cards .carrd h2, .cards .carrd .h2 {
   color: #ffb03b;
@@ -11940,13 +11949,6 @@ body {
 }
 .cards .carrd p {
   color: #9e9e9e;
-}
-
-.content {
-  transition: 0.5s;
-}
-.content:hover h4 p h1, .content:hover .h4 p h1, .content:hover h4 p .h1, .content:hover .h4 p .h1 {
-  transform: translateY(-20px);
 }
 
 .filter-btn {
@@ -11996,6 +11998,41 @@ body {
 
 .desc {
   width: 100%;
+}
+
+.second-carousel {
+  background-image: url(../image/events-bg.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+}
+
+.second-carousel::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: #000;
+  opacity: 0.4;
+}
+
+.font-weight {
+  font-weight: 400;
+  font-size: 19px;
+}
+
+.icons-desc .p {
+  font-weight: 300;
+}
+
+.price-check {
+  font-size: 21px;
+  font-weight: bolder;
+  border-bottom: 3px solid #ffc400;
+  width: 3vw;
 }
 
 /*# sourceMappingURL=app.css.map */
