@@ -11845,6 +11845,65 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+@font-face {
+  src: url(../fonts/OLeoScript-Regular.ttf);
+}
+.book {
+  padding: 5px 20px;
+  border-radius: 20px;
+  color: #fff;
+}
+
+nav .nav-link {
+  color: #fff;
+}
+nav .nav-link:hover {
+  color: #ffc400;
+}
+nav .nav-link:active {
+  color: #ffc400;
+}
+
+.navbar-scrolled {
+  background: rgba(1, 1, 1, 0.319);
+}
+
+/*slider*/
+body {
+  height: 1000vh;
+}
+
+.carousel-item {
+  height: 123vh;
+  min-height: 300px;
+}
+.carousel-item h1, .carousel-item .h1 {
+  font-family: "";
+}
+
+.carousel-item::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: #000;
+  opacity: 0.4;
+}
+
+.carousel-caption {
+  bottom: 290px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.btn-1 {
+  border-radius: 20px;
+  padding: 10px 15px;
+}
+
 .about {
   background: #fffaf3;
 }
@@ -11881,6 +11940,46 @@ textarea.form-control-lg {
 }
 .cards .carrd p {
   color: #9e9e9e;
+}
+
+.content {
+  transition: 0.5s;
+}
+.content:hover h4 p h1, .content:hover .h4 p h1, .content:hover h4 p .h1, .content:hover .h4 p .h1 {
+  transform: translateY(-20px);
+}
+
+.filter-btn {
+  border-radius: 20px;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 18px;
+  color: #ffb03b;
+}
+
+.points {
+  color: #858484;
+  font-weight: 300;
+}
+
+.price {
+  font-weight: bold;
+}
+
+.lorem {
+  padding-right: 280px;
+  font-size: 14px;
+  color: grey;
+}
+
+.check-link {
+  text-decoration: none;
+  color: #000;
+}
+.check-link:hover {
+  color: #ffb03b;
 }
 
 /*# sourceMappingURL=app.css.map */
