@@ -2,3 +2,17 @@
 @import ../../node_modules/bootstrap/scss/variables
 
 
+
+$spacer: 30px 
+$my-space: ( 6: $spacer * 2, 7: $spacer * 3 )
+
+$spacers: map-merge( $spacers, $my-space)
+
+
+
+$main: #ffca2c
+
+$custom-colors: ("main": $main)
+
+
+$theme-colors: map-merge($custom-colors , $theme-colors)
