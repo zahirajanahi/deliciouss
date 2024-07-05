@@ -1,3 +1,7 @@
+*
+    padding: 0
+    margin: 0
+
 @font-face
    font-family: oleo
    src: url(../fonts/Satisfy-Regular.ttf)
@@ -22,9 +26,8 @@ nav
    
 
 
-/*slider*/
-body
-    height: 1000vh
+
+
 .carousel-item
     height: 123vh
     min-height: 300px
@@ -53,20 +56,49 @@ body
     border-radius: 20px
     padding: 10px 15px
 
-/*.cards-section 
-  background-image: url('../image/chefs-bg.jpg')
-  background-size: cover
-  background-attachment: fixed
-  position: relative
-  &::before
-    content: ""
-    position: absolute
-    top: 0
-    left: 0
-    height: 100%
-    width:100%
-    background: #fff
-    opacity: 0.4
-    */
+.nav-icon
+    display: none
+.close
+    display: none
+.none
+    display: none
 
 
+@media (max-width: 425px)
+    .bg-opcty
+        height: 100vh
+    .imge
+        height: 100vh
+    .carousel-caption
+        bottom: 90px
+        padding-left: 10px
+        padding-right: 10px
+    .links
+        background-color: #fff
+        position: fixed
+        border-radius: 10px
+        width: 90%
+        height: 90vh
+        top: 10vh
+        bottom: 5vh
+        left: 5vw
+        right: 5vw
+        flex-direction: column
+        padding: 20px
+        gap: 20px
+        font-size: 16px
+        display: none !important
+        z-index: 99999
+        a
+            color: #000
+    .close
+        display: block
+    .nav-icon
+        display: flex
+        color: #fff
+
+    #toggle:checked ~ .nav-right .links
+        display: flex !important
+        
+   
+            

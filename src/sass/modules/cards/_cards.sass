@@ -19,3 +19,22 @@
         p
             color: #9e9e9e
     
+.cards-section 
+  background-image: url('../image/chefs-bg.jpg')
+  background-size: cover
+  background-attachment: fixed
+  position: relative
+  &::before
+    content: ""
+    position: absolute
+    top: 0
+    left: 0
+    height: 100%
+    width:100%
+    background: #fff
+    opacity: 0.4
+  
+@media (max-width: 425px)
+    .cards
+        display: flex
+        flex-direction: column

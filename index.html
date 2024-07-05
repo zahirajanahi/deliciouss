@@ -10,30 +10,37 @@
   <header>
     <!--nav start-->
     <nav class=" nav d-flex pt-3 gap-3 justify-content-evenly fixed-top pb-2  navbar-dark navbar-expand-lg navbar-scrolled">
+      <input type="checkbox" id="toggle" class="none">
+      <label for="toggle" class="nav-icon"><i class="bi bi-list"></i></label>
       <div>
       <li><img src="./public/image/logo-removebg-preview.png" width="120px" alt=""></li>
       </div>
-      <div class="d-flex gap-2">
+      <div class="nav-right d-flex">
+
+          <div class="d-flex gap-2 links">
+      <li><a href="./index.html"><i class="bi close bi-x-lg"></i></a></li>
       <li><a class="nav-link text-warning" href="#">Home</a></li>
-      <li><a class="nav-link" href="#">About</a></li>
-      <li><a class="nav-link" href="#">Menu</a></li>
-      <li><a class="nav-link" href="#">Specials</a></li>
-      <li><a class="nav-link" href="#">Events</a></li>
-      <li><a class="nav-link" href="#">Chefs</a></li>
-      <li><a class="nav-link" href="#">Gallery</a></li>
+      <li><a class="nav-link" href="#About">About</a></li>
+      <li><a class="nav-link" href="#Menu">Menu</a></li>
+      <li><a class="nav-link" href="#Specials">Specials</a></li>
+      <li><a class="nav-link" href="#Events">Events</a></li>
+      <li><a class="nav-link" href="#Chefs">Chefs</a></li>
+      <li><a class="nav-link" href="#Gallery">Gallery</a></li>
       <li class="nav-item dropdown">
       <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
       Dropdown
       </a>
       <ul class="dropdown-menu">
       <li><a class="dropdown-item" href="#">page one</a></li>
-      <li><a class="dropdown-item" href="#"></a>page two</li>
+      <li><a class="dropdown-item" href="#">page two</a></li>
       <li><hr class="dropdown-divider"></li>
       <li><a class="dropdown-item" href="#">page three</a></li>
       </ul>
       </li>
-      <li><a class="nav-link" href="#">Contact</a></li>
-      <button class="btn btn-warning book">Book a table</button>
+      <li><a class="nav-link" href="#Contact">Contact</a></li>
+     
+          </div>
+        <button class="btn btn-warning book">Book a table</button>
       </div>
       </ul>
       </nav>
@@ -49,8 +56,8 @@
     </div>
     <div class="carousel-inner img-size">
       <div class="carousel-item bg-opcty active">
-        <img src="./public/image/slide/slide-1.jpg" class="d-block w-100" alt="Slide 1">
-        <div class="carousel-caption d-none d-md-block">
+        <img src="./public/image/slide/slide-1.jpg" class="imge d-block w-100" alt="Slide 1">
+        <div class="carousel-caption  d-block">
           <h1><span class="text-warning">Delicious</span> restaurant</h1>
           <p class="py-3">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
           <div class="slider-btn">
@@ -60,8 +67,8 @@
         </div>
       </div>
       <div class="carousel-item bg-opcty">
-        <img src="./public/image/slide/slide-2.jpg" class="d-block w-100" alt="Slide 2">
-        <div class="carousel-caption d-none d-md-block">
+        <img src="./public/image/slide/slide-2.jpg" class="imge alert-danger w-100" alt="Slide 2">
+        <div class="carousel-caption  d-block">
           <h1>Lorem Ipsum Dolor</h1>
           <p class="py-3">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
           <div class="slider-btn">
@@ -71,8 +78,8 @@
         </div>
       </div>
       <div class="carousel-item bg-opcty">
-        <img src="./public/image/slide/slide-3.jpg" class="d-block w-100" alt="Slide 3">
-        <div class="carousel-caption d-none d-md-block">
+        <img src="./public/image/slide/slide-3.jpg" class="imge d-block w-100" alt="Slide 3">
+        <div class="carousel-caption  d-block">
           <h1>Lorem Ipsum Dolor</h1>
           <p class="py-3">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
           <div class="slider-btn">
@@ -93,7 +100,7 @@
   </div>
   <!--carousel end-->
  <!--about Section-->
- <section class="container-fluid about pb-5">
+ <section class="container-fluid about pb-5" id="About">
   <div class="row">
     <div class="col-lg-5 align-items-stretch video">
       <video controls width="100%" height="100%" poster="./public/image/about.jpg">
@@ -115,7 +122,7 @@
 </section>
 
  
-  <!--cards-section-->
+  <!--three cards-section-->
   <section class="cardsOne container pt-5">
     <div class="text-center">
       <h1>Why choose <span class="text-warning">Our Restaurant</span> </h1>
@@ -143,7 +150,7 @@
   </section>
   
   <!--Menu section filter -->
-  <section class="menu-section text-center container">
+  <section class="menu-section text-center container" id="Menu">
     <h1 class="pt-5 pb-3 ">Check our tasty <span class="text-warning">Menu</span></h1>
     <div class="nav buttons justify-content-center d-flex gap-3" id="myTab" role="tablist">
             <button class="btn btn-outline-warning text-black filter-btn  active" id="all-tab" data-toggle="tab" href="#all" role="tab" aria-controls="all" aria-selected="true">Show All</button>
@@ -151,67 +158,170 @@
             <button class="btn btn-outline-warning text-black filter-btn" id="salads-tab" data-toggle="tab" href="#salads" role="tab" aria-controls="salads" aria-selected="false">Salads</button>
             <button class="btn btn-outline-warning text-black filter-btn" id="specialty-tab" data-toggle="tab" href="#specialty" role="tab" aria-controls="specialty" aria-selected="false">Specialty</button>
     </div>
-    <div class="tab-content mt-4" id="myTabContent">
+
+    <div class="tab-content mt-4" >
+      
         <div class=" pt-5 tab-pane fade show active" id="all" role="tabpanel" aria-labelledby="all-tab">
             <div class="row">
                 <div class="col-lg-6">
-                    <div><span class="title">Lobster Bisque </span><span class="points">...........................................................................................</span><span class="price"> $5.95</span> <p class="lorem">Lorem, deren, trataro, filede, nerada</p></div>
-                    <div><span class="title">Crab Cake </span><span class="points">........................................................................................................</span><span class="price"> $5.95</span> <p class="lorem">Lorem, deren, trataro, filede, nerada</p></div>
-                    <div><span class="title">Tuscan Grilled </span><span class="points">..............................................................................................</span><span class="price"> $5.95</span> <p class="lorem">Lorem, deren, trataro, filede, nerada</p></div>
-                    <div><span class="title">Greek Salad</span><span class="points">....................................................................................................</span><span class="price"> $5.95</span> <p class="lorem">Lorem, deren, trataro, filede, nerada</p></div>
-                    <div><span class="title">Lobster Roll </span><span class="points">..................................................................................................</span><span class="price"> $5.95</span> <p class="lorem">Lorem, deren, trataro, filede, nerada</p></div>
+                  <div>
+                    <div class="d-flex justify-content-between">
+                      <div class="title">Lobster Roll</div>
+                      <div class="price">$5.55</div>
+                    </div>
+                    <div class="lorem py-2">Lorem ipsum, dolor sit amet </div>
+                  </div>
+                  <div>
+                    <div class="d-flex justify-content-between">
+                      <div class="title">Lobster Roll</div>
+                      <div class="price">$5.55</div>
+                    </div>
+                    <div class="lorem py-2 ">Lorem ipsum, dolor sit amet </div>
+                  </div> 
+                  <div>
+                    <div class="d-flex justify-content-between">
+                      <div class="title">Lobster Roll</div>
+                      <div class="price">$5.55</div>
+                    </div>
+                    <div class="lorem py-2">Lorem ipsum, dolor sit amet </div>
+                  </div>
+                  <div>
+                    <div class="d-flex justify-content-between">
+                      <div class="title">Lobster Roll</div>
+                      <div class="price">$5.55</div>
+                    </div>
+                    <div class="lorem py-2">Lorem ipsum, dolor sit amet </div>
+                  </div>
+                  
                 </div>
                 <div class="col-lg-6">
-                    <div><span class="title">Bread barrel</span><span class="points">...................................................................................................</span><span class="price"> $5.95</span> <p class="lorem">Lorem, deren, trataro, filede, nerada</p></div>
-                    <div><span class="title">Caesar Selections</span><span class="points">.........................................................................................</span><span class="price"> $5.95</span> <p class="lorem">Lorem, deren, trataro, filede, nerada</p></div>
-                    <div><span class="title">Mozzarella Stick</span><span class="points">..........................................................................................</span><span class="price"> $5.95</span> <p class="lorem">Lorem, deren, trataro, filede, nerada</p></div>
-                    <div><span class="title">Spinach Salad</span><span class="points">................................................................................................</span><span class="price"> $5.95</span> <p class="lorem">Lorem, deren, trataro, filede, nerada</p></div>
+                  <div>
+                    <div class="d-flex justify-content-between">
+                      <div class="title">Lobster Roll</div>
+                      <div class="price">$5.55</div>
+                    </div>
+                    <div class="lorem py-2">Lorem ipsum, dolor sit amet </div>
+                  </div>
+                  <div>
+                    <div class="d-flex justify-content-between">
+                      <div class="title">Lobster Roll</div>
+                      <div class="price">$5.55</div>
+                    </div>
+                    <div class="lorem py-2 ">Lorem ipsum, dolor sit amet </div>
+                  </div> 
+                  <div>
+                    <div class="d-flex justify-content-between">
+                      <div class="title">Lobster Roll</div>
+                      <div class="price">$5.55</div>
+                    </div>
+                    <div class="lorem py-2">Lorem ipsum, dolor sit amet </div>
+                  </div>
+                 
                 </div>
             </div>
         </div>
+
         <div class="tab-pane fade" id="starters" role="tabpanel" aria-labelledby="starters-tab">
             <div class="row">
                 <div class="col-lg-6">
-                    <div><span class="title">Lobster Bisque </span><span class="points">...........................................................................................</span><span class="price"> $5.95</span> <p class="lorem">Lorem, deren, trataro, filede, nerada</p></div>
-                    <div><span class="title">Mozzarella Stick</span><span class="points">..........................................................................................</span><span class="price"> $5.95</span> <p class="lorem">Lorem, deren, trataro, filede, nerada</p></div>
+                  <div>
+                    <div class="d-flex justify-content-between">
+                      <div class="title">Lobster Roll</div>
+                      <div class="price">$5.55</div>
+                    </div>
+                    <div class="lorem py-2">Lorem ipsum, dolor sit amet </div>
+                  </div>
+                  <div>
+                    <div class="d-flex justify-content-between">
+                      <div class="title">Lobster Roll</div>
+                      <div class="price">$5.55</div>
+                    </div>
+                    <div class="lorem py-2">Lorem ipsum, dolor sit amet </div>
+                  </div>
                 </div>
                 <div class="col-lg-6">
-                    <div><span class="title">Crab Cake </span><span class="points">........................................................................................................</span><span class="price"> $5.95</span> <p class="lorem">Lorem, deren, trataro, filede, nerada</p></div>
+                  <div>
+                    <div class="d-flex justify-content-between">
+                      <div class="title">Lobster Roll</div>
+                      <div class="price">$5.55</div>
+                    </div>
+                    <div class="lorem py-2">Lorem ipsum, dolor sit amet </div>
+                  </div>
                 </div>
             </div>
         </div>
+
         <div class="tab-pane fade" id="salads" role="tabpanel" aria-labelledby="salads-tab">
-            <div class="row">
-                <div class="col-lg-6">
-                    <div><span class="title">Caesar Selections</span><span class="points">.........................................................................................</span><span class="price"> $5.95</span> <p class="lorem">Lorem, deren, trataro, filede, nerada</p></div>
-                    <div><span class="title">Spinach Salad</span><span class="points">................................................................................................</span><span class="price"> $5.95</span> <p class="lorem">Lorem, deren, trataro, filede, nerada</p></div>
+             <div class="row">
+                <div class="col-lg-6 pe-5">
+                  <div>
+                    <div class="d-flex justify-content-between">
+                      <div class="title">Lobster Roll</div>
+                      <div class="price">$5.55</div>
+                    </div>
+                    <div class="lorem py-2">Lorem ipsum, dolor sit amet </div>
+                  </div>
+                  <div>
+                    <div class="d-flex justify-content-between">
+                      <div class="title">Lobster Roll</div>
+                      <div class="price">$5.55</div>
+                    </div>
+                    <div class="lorem py-2">Lorem ipsum, dolor sit amet </div>
+                  </div>
                 </div>
                 <div class="col-lg-6">
-                    <div><span class="title">Greek Salad</span><span class="points">....................................................................................................</span><span class="price"> $5.95</span> <p class="lorem">Lorem, deren, trataro, filede, nerada</p></div>
+                  <div>
+                    <div class="d-flex justify-content-between">
+                      <div class="title">Lobster Roll</div>
+                      <div class="price">$5.55</div>
+                    </div>
+                    <div class="lorem py-2">Lorem ipsum, dolor sit amet </div>
+                  </div>
                 </div>
             </div>
         </div>
+
         <div class="tab-pane fade" id="specialty" role="tabpanel" aria-labelledby="specialty-tab">
-            <div class="row">
-                <div class="col-lg-6">
-                    <div><span class="title">Tuscan Grilled </span><span class="points">..............................................................................................</span><span class="price"> $5.95</span> <p class="lorem">Lorem, deren, trataro, filede, nerada</p></div>
-                    <div><span class="title">Lobster Roll </span><span class="points">..................................................................................................</span><span class="price"> $5.95</span> <p class="lorem">Lorem, deren, trataro, filede, nerada</p></div>
+             <div class="row">
+                <div class="col-lg-6 pe-5">
+                  <div>
+                    <div class="d-flex justify-content-between">
+                      <div class="title">Lobster Roll</div>
+                      <div class="price">$5.55</div>
+                    </div>
+                    <div class="lorem py-2">Lorem ipsum, dolor sit amet </div>
+                  </div>
+                  <div>
+                    <div class="d-flex justify-content-between">
+                      <div class="title">Lobster Roll</div>
+                      <div class="price">$5.55</div>
+                    </div>
+                    <div class="lorem py-2">Lorem ipsum, dolor sit amet </div>
+                  </div>
                 </div>
                 <div class="col-lg-6">
-                    <div><span class="title">Bread barrel</span><span class="points">...................................................................................................</span><span class="price"> $5.95</span> <p class="lorem">Lorem, deren, trataro, filede, nerada</p></div>
+                  <div>
+                    <div class="d-flex justify-content-between">
+                      <div class="title">Lobster Roll</div>
+                      <div class="price">$5.55</div>
+                    </div>
+                    <div class="lorem py-2">Lorem ipsum, dolor sit amet </div>
+                  </div>
                 </div>
             </div>
         </div>
     </div>
+
+
 </section>
 
 <!--check our special section-->
-<section class="container py-5">
+<section class="container py-5" id="Specials">
   <h1 class="text-center">Check our <span class="special-title text-warning">Specials</span></h1>
   <p class="text-center py-3">Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.</p>
 
   <div class="row">
-    <div class="col-lg-4 pt-4">
+    <div class="col-lg-4 pt-4 special">
       <div class="nav flex-column gap-3 nav-pills" role="tablist" aria-orientation="vertical">
         <a class="check-link text-warning" id="tab1" data-toggle="pill" href="#slide1" role="tab" aria-controls="slide1" aria-selected="true">Modi sit est</a>
         <a class="check-link" id="tab2" data-toggle="pill" href="#slide2" role="tab" aria-controls="slide2" aria-selected="false">Unde praesentium sed</a>
@@ -295,7 +405,7 @@
 
 <!--second carousel-->
 
-<section class="second-carousel">
+<section class="second-carousel" id="Events">
 
 
   
@@ -303,7 +413,7 @@
   <div id="mycarousel2" class="carousel slide" data-bs-ride="carousel">
     <h1 class="text-white text-center py-5">Organize Your <span class="text-warning">Events</span> in our Restaurant</h1>
     <div class="carousel-inner">
-      <div class="carousel-item active">
+      <div class="carousel-item mycarousel2-item  active">
         <section class="container events d-flex gap-5">
             <div class="img1 pb-5"><img src="./public/image/event-birthday.jpg" height="400px" alt=""></div>
             <div class="content2">
@@ -344,7 +454,7 @@
              <h2 class="text-warning ">custom parties</h2>
              <p class="text-white price-check">$99</p>
              <p class="text-white font-weight">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora minima minus non, earum ipsum ab. Aspernatur laudantium magnam dolorem quae!</p>
-             <div class="icons-desc d-flex flex-column  text-white ps-5  pb-3">
+             <div class="icons d-flex flex-column  text-white ps-5  pb-3">
               <p class="p"><i class="bi bi-check-circle text-warning"></i> Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
               <p class="p"><i class="bi bi-check-circle text-warning"></i> Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
               <p class="p"><i class="bi bi-check-circle text-warning"></i> Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -401,7 +511,7 @@
 
 <!--photos section-->
 
-<section class="photos pt-5 pb-1">
+<section class="photos pt-5 pb-1" id="Gallery">
   <div class="text-center">
     <h1>Some photos from <span class="text-warning">Our Restaurant</span></h1>
     <p >Ut possimus qui ut temporibus culpa velit eveniet modi omnis est <br> adipisci expedita at voluptas atque vitae autem.</p>
@@ -422,54 +532,54 @@
     </div>
 </section>
 
-<!--cards section full bootrstrap section-->
-<section class="cards-section py-5">
+<!--cards section chefs full bootrstrap section-->
+<section class="cards-section py-5 " id="Chefs">
   <div class="text-center py-4">
     <h1>Our Proffesional<span class="text-warning"> Chefs</span></h1>
     <p >Ut possimus qui ut temporibus culpa velit eveniet modi omnis est <br> adipisci expedita at voluptas atque vitae autem.</p>
     </div>
-    <div class="row container mx-auto">
+    <div class="row container mx-auto w-100 pb-5">
       <div class="col-md-4">
-        <div class="card mb-4 ">
+        <div class="card mb-4 position-relative">
           <img src="./public/image/chefs/chefs-1.jpg" class="card-img-top" alt="Walter White">
-          <div class="card-body text-center text-secondary">
+          <div class="card-body text-center text-secondary position-absolute top-100 start-50 w-75  bg-light translate-middle">
             <h5 class="card-title pb-3">Wa<span class="border-bottom pb-2 border-warning border-1">lter Wh</span>ite</h5>
             <p class="card-text">Master Chef</p>
             <div class="d-flex gap-2 justify-content-center">
-              <a href="#"><i class="bi bi-twitter text-secondary"></i></a>
-              <a href="#"><i class="bi bi-facebook  text-secondary"></i></a>
-              <a href="#"><i class="bi bi-instagram  text-secondary"></i></a>
-              <a href="#"><i class="bi bi-linkedin  text-secondary"></i></a>
+              <a href="#"><i class="bi bi-twitter text-secondary icon-link-hover link-warning"></i></a>
+              <a href="#"><i class="bi bi-facebook  text-secondary icon-link-hover link-warning"></i></a>
+              <a href="#"><i class="bi bi-instagram  text-secondary icon-link-hover link-warning"></i></a>
+              <a href="#"><i class="bi bi-linkedin  text-secondary icon-link-hover link-warning"></i></a>
             </div>
           </div>
         </div>
       </div>
       <div class="col-md-4">
-        <div class="card mb-4">
+        <div class="card mb-4 position-relative">
           <img src="./public/image/chefs/chefs-2.jpg" class="card-img-top" alt="Sarah Jhonson">
-          <div class="card-body text-center text-secondary">
+          <div class="card-body text-center text-secondary position-absolute top-100 start-50 w-75 bg-light translate-middle">
             <h5 class="card-title pb-3">Sa<span class="border-bottom pb-2 border-warning border-1">rah jhon</span>son</h5>
             <p class="card-text">Patissier</p>
             <div class="d-flex gap-2 justify-content-center">
-              <a href="#"><i class="bi bi-twitter  text-secondary"></i></a>
-              <a href="#"><i class="bi bi-facebook  text-secondary"></i></a>
-              <a href="#"><i class="bi bi-instagram  text-secondary"></i></a>
-              <a href="#"><i class="bi bi-linkedin  text-secondary"></i></a>
+              <a href="#"><i class="bi bi-twitter  text-secondary icon-link-hover link-warning"></i></a>
+              <a href="#"><i class="bi bi-facebook  text-secondary icon-link-hover link-warning"></i></a>
+              <a href="#"><i class="bi bi-instagram  text-secondary icon-link-hover link-warning"></i></a>
+              <a href="#"><i class="bi bi-linkedin  text-secondary icon-link-hover link-warning"></i></a>
             </div>
           </div>
         </div>
       </div>
       <div class="col-md-4">
-        <div class="card mb-4">
+        <div class="card mb-4 position-relative">
           <img src="./public/image/chefs/chefs-3.jpg" class="card-img-top" alt="William Anderson">
-          <div class="card-body text-center text-secondary">
+          <div class="card-body text-center text-secondary position-absolute top-100 start-50 w-75 bg-light translate-middle">
             <h5 class="card-title pb-3">Willia<span class="border-bottom pb-2 border-warning border-1">m And</span>erson</h5>
             <p class="card-text">Cook</p>
             <div class="d-flex gap-2 justify-content-center">
-              <a href="#"><i class="bi bi-twitter  text-secondary"></i></a>
-              <a href="#"><i class="bi bi-facebook  text-secondary"></i></a>
-              <a href="#"><i class="bi bi-instagram  text-secondary"></i></a>
-              <a href="#"><i class="bi bi-linkedin  text-secondary"></i></a>
+              <a href="#"><i class="bi bi-twitter  text-secondary icon-link-hover link-warning"></i></a>
+              <a href="#"><i class="bi bi-facebook  text-secondary icon-link-hover link-warning"></i></a>
+              <a href="#"><i class="bi bi-instagram  text-secondary icon-link-hover link-warning"></i></a>
+              <a href="#"><i class="bi bi-linkedin  text-secondary icon-link-hover link-warning"></i></a>
             </div>
           </div>
         </div>
@@ -537,7 +647,7 @@
 
 <!--contact us section / full sass-->
 
-<section class="contactUs">
+<section class="contactUs" id="Contact">
 
 <div class="textCenter">
   <h1><span class="text-warning">Contact</span> Us</h1>
@@ -546,7 +656,7 @@
 <div class="google-map">
   <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6048.84706495235!2d-74.021619!3d40.708692!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1sen!2sus!4v1720108865540!5m2!1sen!2sus"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 </div>
-<div class="formsTwo" id="contact">
+<div class="formsTwo" >
   <div class="box">
       <div class="top">
           <div class="contact">
@@ -580,7 +690,7 @@
       </div>
       <div class="bottom">
           <form action="" class="secondform">
-              <div>
+              <div class="user">
                   <input type="text" placeholder="Your Name">
                   <input type="email" placeholder="Your Email">
               </div>
