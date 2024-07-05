@@ -12867,6 +12867,25 @@ nav .nav-link:active {
   font-weight: 400;
 }
 
+.video {
+  position: relative;
+}
+
+.play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3rem;
+  color: orange;
+  cursor: pointer;
+}
+
+.bi-play-circle-fill {
+  font-size: 3rem;
+  color: orange;
+}
+
 .cards {
   display: flex;
   gap: 50px;
